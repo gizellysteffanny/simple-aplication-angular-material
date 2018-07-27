@@ -9,10 +9,10 @@ $custom-theme: mat-light-theme($custom-primary, $custom-accent);
 @include angular-material-theme($custom-theme);
 
 $alt-primary: mat-palette($mat-yellow);
-$alt-accent: mat-palette($mat-teal);
+$alt-accent: mat-palette($mat-pink);
 
 
-$alt-theme: mat-light-theme($alt-primary, $alt-accent);
+$alt-theme: mat-dark-theme($alt-primary, $alt-accent);
 
 .alternative {
     @include angular-material-theme($alt-theme);

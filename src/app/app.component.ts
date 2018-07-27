@@ -8,12 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   answer: string;
   answerDisplay: string;
+
   showSpinner: boolean;
+  otherTheme: boolean;
 
   constructor() {
     this.answer = '';
     this.answerDisplay = '';
+
     this.showSpinner = false;
+    this.otherTheme = false;
+  }
+
+  changeTheme() {
+    this.otherTheme = !this.otherTheme;
   }
 
   showAnswer() {
